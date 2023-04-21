@@ -1,4 +1,6 @@
 BASE_PATH = 'D:\\scans_without-ecf'
+PATH_TO_DESKTOP = 'C:\\Users\\j177r\\Desktop'
+
 PATIENT_NAMES = [
     'Anonymous58'
 ]
