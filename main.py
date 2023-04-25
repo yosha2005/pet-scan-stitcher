@@ -11,8 +11,7 @@ for patient_name in config.PATIENT_NAMES:
     # initialize scans
 
     # get segment information (scan file location and header file location)
-    # TODO: return path to segment and scan name
-    segment_information = scan_loader.get_segment_information(patient_name)
+    segment_information, save_path, scan_name = scan_loader.get_segment_information(patient_name)
 
     if len(segment_information) == 2:
         upper_segment = scan_loader.Segment(segment_information[0])

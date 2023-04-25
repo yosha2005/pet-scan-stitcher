@@ -84,7 +84,8 @@ def get_segment_information(patient_name):
             else:
                 print('ERROR: Either reconstruction or header file are missing for patient {}_{}'.format(patient_name, segment))
 
-        return segments
+        scan_name = patient_name + '_' + config.ACTIVITY_LEVEL
+        return segments, path_to_reconstructions, scan_name
 
     else:
         print('ERROR: Path to reconstructions does not exist for patient {}'.format(patient_name))
